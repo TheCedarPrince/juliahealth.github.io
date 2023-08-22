@@ -1,6 +1,59 @@
 @def title = "JuliaHealth - Meeting Notes"
 @def hasmath = true
-@def hascode = true 
+
+# August 25 2023
+
+**In Attendance:** 
+
+**Location:** Virtual (JuliaHealth Google Meet)
+
+**Summary:** 
+
+**Keywords:** 
+
+## Agenda
+
+1. New member introductions 
+
+2. Running tasks follow-ups:
+
+  a. Short-term task follow-ups:
+
+    i. @Jacob Set-up HackMD to take notes going forward
+
+      - Copy and paste meeting minutes over to JuliaHealth PR to update at end of meetings
+
+    ii. @Dilum finds out how to live stream JuliaHealth BoF
+
+  b. Long-term task follow-ups:
+
+    i. Creating a template repository 
+
+3. Debrief from JuliaCon
+
+  a. Interoperability of Julia with health research ecosystems (R)
+
+  b. Develop and document tutorials showcasing compositional solutions to JuliaHealth ecosystem problems
+
+  c. Coordinate with bigger Julia Blog to bridge between communities even better
+
+  d. Databases and JuliaHealth
+
+4. Open discussion on next steps for the JuliaHealth community
+
+## Meeting Outcomes
+
+### Short-Term Outcomes
+
+
+
+### Long-Term Outcomes
+
+
+
+## Notes
+
+
 
 # July 28 2023
 
@@ -8,9 +61,9 @@
 
 **Location:** JuliaCon 2023 JuliaHealth Birds of a Feather
 
-**Summary:** 
+**Summary:** New member backgrounds, problems within the Julia ecosystem related to healthcare, thoughts on addressing issues within a JuliaHealth context, and learning resources for Julia within the context of health.
 
-**Keywords:** 
+**Keywords:** #ehr #genomics #biology #interoperability #database #sql #outreach 
 
 ## Agenda
 
@@ -24,11 +77,13 @@
 
 ### Short-Term Outcomes
 
-
+Not Available
 
 ### Long-Term Outcomes
 
+- ACTION: Develop and document tutorials showcasing compositional solutions to JuliaHealth ecosystem problems.
 
+- ACTION: Establish cohesive and organized Julia Blog to guide users and highlight official blogs.
 
 ## Meeting Notes
 
@@ -241,6 +296,7 @@
 ### Short-Term Outcomes
 
 - @Jacob Set-up HackMD to take notes going forward
+
   - Copy and paste meeting minutes over to JuliaHealth PR to update at end of meetings
 
 ### Long-Term Outcomes
@@ -336,6 +392,7 @@
     - PR Checklist:
 
       - Purpose
+
       - Reduce cognitive load
 
     - JuliaHealth package forks: <https://github.com/JuliaCI/PkgTemplates.jl> 
@@ -374,7 +431,7 @@
 
 ### Short-Term Outcomes
 
-- Dilum finds out how to live stream JuliaHealth BoF
+- @Dilum finds out how to live stream JuliaHealth BoF
 
 ### Long-Term Outcomes
 
