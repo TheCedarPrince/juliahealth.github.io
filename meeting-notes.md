@@ -2,6 +2,210 @@
 @def hasmath = true
 @def hascode = true 
 
+# July 28 2023
+
+**In Attendance:** [Attendance Waived for In-Person Meeting
+
+**Location:** JuliaCon 2023 JuliaHealth Birds of a Feather
+
+**Summary:** 
+
+**Keywords:** 
+
+## Agenda
+
+1. Introductions and what people in the community are using Julia for in health research
+
+2. What is missing of painful in Julia that is needed to drive health research forward
+
+3. Thoughts on how to address some of these problems
+
+4. Open discussion and next steps for JuliaHealth
+
+### Short-Term Outcomes
+
+
+
+### Long-Term Outcomes
+
+
+
+## Meeting Notes
+
+- Attendee interests and background
+
+  * Here to learn
+
+  * From EHR development and background
+
+  * Genie folks here to support JuliaHealth endeavors
+
+  * Genomics research and prevention
+
+  * Quebec Heart and Lung Institute
+
+  * Representing PumasAI 
+
+  * Consulting group
+
+    + Developing health research in Michigan area
+
+    + Aggregating claims data
+
+    + To learn what is going on in the community
+
+  * Creator of [MetaAnalysis.jl](https://github.com/arinbasu/MetaAnalysis.jl)
+
+  * Involved with backend of healthcare IT
+
+  * Working on JuliaHub
+
+    + Learning about packages that are out there
+
+    + Here to support JuliaHealth members
+
+    + New Zealand longitudinal child health 
+
+      + Have own secure system 
+
+      + Post-COVID syndrome 
+
+    + Computational biology 
+
+      + Sickle Cell 
+
+      + Applying some ML
+
+* Problems within the Julia ecosystem
+
+  + Julia needs more database connectivity to more easily do operations research
+
+  + Databases are a pain point and composing with other aspects of the ecosystem
+
+  + Interoperability within Julia and other sorts of resources
+
+  + I end up doing the bare minimum in SQL
+
+    + Do we have RAM?
+
+    + Can we pull this into the Julia ecosystem?
+
+    + Crank up the RAM! But only so much scaling
+
+    + Minimal SQL writing
+
+      + Searchlight.jl: Julia ORM layer within 
+
+    + Is Genie like a shiny?
+
+      + No, more of a full-stack
+
+      + Goes beyond just visualization dashboards
+
+  + Sequencing data
+
+    + Equally data 
+
+    + Everyone uploads data in slightly different ways
+
+    + Make simple ways to pull that data
+
+    + R Conductor --> JuliaConductor? 
+
+      + Would make genomic pipelines within Julia pipelines a lot easier
+
+    + We need to understand the underlying structures
+
+    + One of the big pain points
+
+      + Often to have roll your own
+
+  + EpiR --> EpiJ?
+
+    + Power calculators
+
+  + Co-founder of start-up
+
+    + Found unmet need for remote monitoring for neuotropenia
+
+    + Non-invasive screen for neutropenia
+
+    + Device runs Julia 
+
+    + Pain points:
+
+      + Testability of hardware
+
+      + LOTS of CI -- bit of a pain
+
+      + How much repetition happens in CI
+
+    + Part of the problem for these problems:
+
+      + There are still going to be folks who use the same organizations
+
+      + Overcoming inertia to do the same or similar things in Julia
+
+      + Wrapping around Julia? 
+
+        + Bringing it into the R ecosystem
+
+        + Leading to big impacts for callable things from R by having smaller static binaries
+
+        + Wrapping Julia packages in R
+
+      + N3C -- National COVID Cohort Collaborative
+
+        + Went to many healthcare systems across the US to get COVID data
+
+        + Shelled out to Palantir
+
+        + Open source tools within the ecosystem
+
+        + JuliaHub has Boeing board member
+
+          + Trusted within security community
+
+          + Could help in this situation
+
+- Thoughts on how to address some of these problems
+
+  * Using other packages outside of Julia
+
+    + If you have some way to wrap around it
+
+    + Getting support 
+
+    + PythonCall.jl or RCall.jl
+
+      + Not clear how to make this compositional
+
+  * The paradox of compositionality
+
+    + Blog posts go a huge ways to solving problems
+
+    + Tutorials showing how things can be combined together
+
+    + Promotional type material
+
+    + Nice docs are *nice* 
+
+  * The Julia Blog itself
+
+    + Mentions JuliaBloggers but doesn't help with guiding users to read
+
+    + Blogs need to go on as official blogs
+
+    + Julia Forem -- is it maintained?
+
+      + Hook into the tags from blogs
+
+      + Cross-posting where appropriate
+
+  * How to learn Julia within the context of health 
+
+    + Carpentries for learning resources
+
 # June 30 2023
 
 ## Meeting Summary
