@@ -1,6 +1,10 @@
 @def title = "JuliaHealth - Meeting Notes"
 @def hasmath = true
 
+These are the public notes for the JuliaHealth Community.
+Notes are published publicly here and are available for comments and review on the [public HackMD](https://hackmd.io/@AQm1lp9PSPyir6IoTPAZeQ/SJNu_d3uh). 
+Additionally, the notes are [hosted publicly on the GitHub](https://github.com/JuliaHealth/juliahealth.github.io/blob/dev/meeting-notes.md) and are open for PRs or edits as needed.
+
 # August 25 2023
 
 **In Attendance:** 
