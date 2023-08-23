@@ -4,4 +4,4 @@ GitHub = "bc5e4493-9b4d-5f90-b8aa-2b2bcaad7a26"
 NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
 
 [compat]
-Franklin = "0.10.85"
+Franklin = "=0.10.85"
