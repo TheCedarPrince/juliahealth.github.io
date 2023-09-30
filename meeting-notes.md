@@ -1,19 +1,18 @@
 @def title = "JuliaHealth - Meeting Notes"
-@def hasmath = true
 
 These are the public notes for the JuliaHealth Community.
 Notes are published publicly here and are available for comments and review on the [public HackMD](https://hackmd.io/@AQm1lp9PSPyir6IoTPAZeQ/SJNu_d3uh). 
 Additionally, the notes are [hosted publicly on the GitHub](https://github.com/JuliaHealth/juliahealth.github.io/blob/dev/meeting-notes.md) and are open for PRs or edits as needed.
 
-# August 25 2023
+# September 29 2023
 
-**In Attendance:** 
+**In Attendance:** Tiem van der Deure, Scott Jones, dx/dt
 
 **Location:** Virtual (JuliaHealth Google Meet)
 
-**Summary:** 
+**Summary:** Discussion on viral load found in wastewater, GSoD for this fall/GSoC for next summer, and upcoming research opportunities and events
 
-**Keywords:** 
+**Keywords:** #databases #wastewater #interfaces #gsoc #ohdsi
 
 ## Agenda
 
@@ -23,33 +22,25 @@ Additionally, the notes are [hosted publicly on the GitHub](https://github.com/J
 
   a. Short-term task follow-ups:
 
-    i. @Jacob Set-up HackMD to take notes going forward
-
-      - Copy and paste meeting minutes over to JuliaHealth PR to update at end of meetings
-
-    ii. @Dilum finds out how to live stream JuliaHealth BoF
-
   b. Long-term task follow-ups:
 
-    i. Creating a template repository 
+    i. Creating a template repository
 
-3. Debrief from JuliaCon
+3. Infectious Disease load for various sewage water data
 
-  a. Interoperability of Julia with health research ecosystems (R)
+4. Upcoming research opportunities and events
 
-  b. Develop and document tutorials showcasing compositional solutions to JuliaHealth ecosystem problems
+  a. Not too early to start thinking about GSoC
 
-  c. Coordinate with bigger Julia Blog to bridge between communities even better
+  b. Julia and OHDSI Symposium
 
-  d. Databases and JuliaHealth
-
-4. Open discussion on next steps for the JuliaHealth community
+5. Open discussion
 
 ## Meeting Outcomes
 
 ### Short-Term Outcomes
 
-
+- Jacob shares info on waste water management + viral load information
 
 ### Long-Term Outcomes
 
@@ -57,6 +48,190 @@ Additionally, the notes are [hosted publicly on the GitHub](https://github.com/J
 
 ## Notes
 
+- New member introductions
+  - Tiem van der Deure
+    - University of Copenhagen PhD
+    - Vector-borne Disease Modeling
+    - Epidemiological modeling and climate effects on health
+    - Rafael Schoueten 
+  - Scott Jones
+    - Heavily involved in healthcare IT 
+  - dx/dt
+
+- Google Summer of Code
+  - Didn't know it existed
+  - Google Season of Docs is great too
+    - Best for long-term maintenance
+    - In the Julia docs ecosystem is kinda a mess
+
+- OHDSI + Julia
+  - How difficult it has been to work with EHR from EPIC
+    - Still a bit manual but getting better
+  - Turing modeling "making them work"
+    - Getting them to run
+      - Making it run fast enough
+      - Much easier to use but not as fast as otherwise
+    - Extremely mathy very fast
+
+- Sewage water information for disease population estimations
+  - Weekly excerpt 
+  - Infectious disease doctor
+    - Would be really neat to make some kind of app
+    - To check wastewater 
+      - Propensity of viruses in ER
+  - Physician testing for rough understanding of what is happening in community
+    - You don't just need to look for one disease, but rather multiple co-factors
+  - Many healthcare systems put together monitoring systems
+    - NHS (in UK) dismantled their monitoring systems
+
+# August 25 2023
+
+**In Attendance:** Edmund Miller, Jonathan Starr, Clark Evans, Kirill Simonov, Jacob Zelko
+
+**Location:** Virtual (JuliaHealth Google Meet)
+
+**Summary:** Recap of events from the JuliaHealth BoF at JuliaCon and introduction to the NumFOCUS OSSci project
+
+**Keywords:** #numfocus #ossci #juliacon #bof #interoperability #databases #documentation
+
+## Agenda
+
+1. New member introductions
+
+2. Misc Announcements
+
+   1. CalciumScoring.jl -- Dale Black
+   
+   2. Survival Analyses -- Arin Basu
+
+   3. Google Summer of Code Fellowship wrapping up
+  
+   4. We are on the Julia Community Calendar!
+   
+   5. Small updates to the JuliaHealth website
+
+2. Running tasks follow-ups:
+
+   1. Short-term task follow-ups:
+
+      - @Jacob Set-up HackMD to take notes going forward
+
+        - Copy and paste meeting minutes over to JuliaHealth PR to update at end of meetings
+
+   2. @Dilum finds out how to live stream JuliaHealth BoF
+
+       - Long-term task follow-ups:
+
+   3. Creating a template repository 
+
+3. Debrief from JuliaCon
+
+   1. Interoperability of Julia with health research ecosystems (R )
+
+   2. Develop and document tutorials showcasing compositional solutions to JuliaHealth ecosystem problems
+
+   3. Coordinate with bigger Julia Blog to bridge between communities even better
+
+   4. Databases and JuliaHealth
+
+4. Jon Starr and NumFOCUS's OSSci Program
+
+5. Open discussion on next steps for the JuliaHealth community
+
+## Meeting Outcomes
+
+### Short-Term Outcomes
+
+- @Jacob follow-up with Jonathan about JuliaHealth + OSSci
+- @Edmund let Jacob know about blog posts solving problems
+
+### Long-Term Outcomes
+
+- Support OSSci about JuliaHealth
+
+## Notes
+
+- Introductions
+    - Clark C. Evans
+        - Master cobbler of YAML
+        - Used to work at Prometheus Research
+            - Sold to IQVIA
+        - Worked under MechanicalRabbit Umbrella
+            - Developed FunSQL.jl with Kirill
+            - Database characterization
+        - Joined Tufts University CTSA
+            - Helping with data warehousing
+                - Objects to query OHDSI databases and EPIC Clarity
+            - Getting Pluto working
+    - Jonathan 
+        - Manager for OSSci for NumFOCUS
+        - Goal: Mapping open source science ecosystem
+        - Work with Distributed Computing
+            - Berkeley technology
+            - Blocks and chains!
+        - Using Open Source and Science to drive research
+    - Edmund
+        - PhD Candidate at Texas Dallas
+            - Molecular and Cell Biology
+            - Functional Genomics
+        - Coming from JuliaCon
+        - Excited about Health stuff
+
+- Interoperability of Julia with health research ecosystems (R )
+    - Easiest way to interoperate is to call them directly from the command line
+    - Build your own executables
+    - Most reliable/easiest
+    - Database approach:
+        - Build table in one language
+        - Ingest in another
+    - Combining executables in one location -- use Docker?
+        - Can run on several different machines
+    - Building R packages with Julia backends is possible
+
+
+- Develop and document tutorials showcasing compositional solutions to JuliaHealth ecosystem problems
+    - Competing Julia with other tutorials?
+    - Switching over to Julia from what? 
+    - Why are people still not switching?
+        - Demonstrating the use is one way
+    - Obviously, one could write more posts
+    - But there seems to be a lot of content already -- what is missing?
+    - Does seem like there is two different levels of documentation 
+        - Beginner
+        - Advanced
+    - Where are the practical means of solving problems in Julia?
+
+- Databases and JuliaHealth
+    - Show how to do the basics
+    - Common database errors
+        - How to address them
+    - Unclear on how to solve it; more people working in this space?
+    - Not really a problem within ecosystem
+    - Look at drivers across all packages to see how things work in Julia ecosystem
+        - See how we can address issues across ecosystem
+
+- Jonathan Starr and NumFOCUS's OSSci Program
+    - Getting to deep diving within Julia ecosystem
+    - Researchers who want to find a package that they can use and develop
+    - Mapping projects and people to a given tool
+        - Can look at map to see where packages are needed for a particular ecosystem
+        - Can click on and connect with researchers
+        - Highlighting of credit for researchers
+    - Starting with NumFOCUS projects
+    - Building out knowledge of all ongoing projects/software
+        - Julia is little represented right now
+    - How to show to funders/orgs what projects to support
+    - How to build support across or collaboration between groups
+    - Trying to stop abandonware from happening
+    - Attempting to build social infrastructure
+    - Q&A
+        - Tufts doing something very similar -- happy to collaborate
+        - How can JuliaHealth get started and involved?
+            - Jonathan: Send me reference page and we can get this started!
+    - Links:
+        - About: https://numfocus.org/open-source-science-initiative-ossci
+        - How To Join: https://opensource.science
+        - Map of Open Source Science (MOSS)
 
 
 # July 28 2023
