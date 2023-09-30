@@ -4,6 +4,86 @@ These are the public notes for the JuliaHealth Community.
 Notes are published publicly here and are available for comments and review on the [public HackMD](https://hackmd.io/@AQm1lp9PSPyir6IoTPAZeQ/SJNu_d3uh). 
 Additionally, the notes are [hosted publicly on the GitHub](https://github.com/JuliaHealth/juliahealth.github.io/blob/dev/meeting-notes.md) and are open for PRs or edits as needed.
 
+# September 29 2023
+
+**In Attendance:** Tiem van der Deure, Scott Jones, dx/dt
+
+**Location:** Virtual (JuliaHealth Google Meet)
+
+**Summary:** Discussion on viral load found in wastewater, GSoD for this fall/GSoC for next summer, and upcoming research opportunities and events
+
+**Keywords:** #databases #wastewater #interfaces #gsoc #ohdsi
+
+## Agenda
+
+1. New member introductions 
+
+2. Running tasks follow-ups:
+
+  a. Short-term task follow-ups:
+
+  b. Long-term task follow-ups:
+
+    i. Creating a template repository
+
+3. Infectious Disease load for various sewage water data
+
+4. Upcoming research opportunities and events
+
+  a. Not too early to start thinking about GSoC
+
+  b. Julia and OHDSI Symposium
+
+5. Open discussion
+
+## Meeting Outcomes
+
+### Short-Term Outcomes
+
+- Jacob shares info on waste water management + viral load information
+
+### Long-Term Outcomes
+
+
+
+## Notes
+
+- New member introductions
+  - Tiem van der Deure
+    - University of Copenhagen PhD
+    - Vector-borne Disease Modeling
+    - Epidemiological modeling and climate effects on health
+    - Rafael Schoueten 
+  - Scott Jones
+    - Heavily involved in healthcare IT 
+  - dx/dt
+
+- Google Summer of Code
+  - Didn't know it existed
+  - Google Season of Docs is great too
+    - Best for long-term maintenance
+    - In the Julia docs ecosystem is kinda a mess
+
+- OHDSI + Julia
+  - How difficult it has been to work with EHR from EPIC
+    - Still a bit manual but getting better
+  - Turing modeling "making them work"
+    - Getting them to run
+      - Making it run fast enough
+      - Much easier to use but not as fast as otherwise
+    - Extremely mathy very fast
+
+- Sewage water information for disease population estimations
+  - Weekly excerpt 
+  - Infectious disease doctor
+    - Would be really neat to make some kind of app
+    - To check wastewater 
+      - Propensity of viruses in ER
+  - Physician testing for rough understanding of what is happening in community
+    - You don't just need to look for one disease, but rather multiple co-factors
+  - Many healthcare systems put together monitoring systems
+    - NHS (in UK) dismantled their monitoring systems
+
 # August 25 2023
 
 **In Attendance:** Edmund Miller, Jonathan Starr, Clark Evans, Kirill Simonov, Jacob Zelko
